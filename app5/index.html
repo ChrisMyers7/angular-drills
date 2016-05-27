@@ -1,7 +1,27 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app='app'>
+
+	<head>
+		<title>Api Practice</title>
+		<link href="style.css" rel='stylesheet'>
+		<link href="reset.css" rel="stylesheet">
+	</head>
+
+
+	<body ng-controller='mainCtrl'>
+
+		<header class="the-head">
+			<div class="the-name">Star Wars</div>
+		</header>
+
+		<div ng-repeat='poki in pokis' ng-class-even= "'even-divs'" ng-class-odd="'odd-divs'">
+			<div class="starship-name">{{poki}}</div>
+			<!-- <div class="starship-crew">Crew Count: {{poki}}</div>
+			<div class="starship-class">Starship Class: {{poki}}</div> -->
+			<img ng-src
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

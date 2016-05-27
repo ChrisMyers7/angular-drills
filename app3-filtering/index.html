@@ -1,6 +1,24 @@
-<html>
-	<body>
-		Something
+<html ng-app='app'>
+	<body ng-controller='mainCtrl'>
+
+		<input ng-model='nameSpec'/>
+
+		<select ng-model='userSelect'>
+			<option value='user.name'>Name</option>
+			<option value='user.email'>Email</option>
+			<option value='user.phone'>Phone</option>
+		</select>
+
+		<div ng-repeat='user in users | filter: nameSpec | orderBy: userSelect'>
+			<ul>
+				<li> Name: {{user.name}}</li>
+				<li> Email: {{user.email}}</li>
+				<li> Phone: {{user.phone}}</li>
+			</ul>
+		</div>
+
+
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

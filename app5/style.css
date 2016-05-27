@@ -1,0 +1,16 @@
+.the-head {
+  height: 6vh;
+  width: 100%;
+  text-align: center;
+  color: #FFE758;
+  font-size: 30px;
+}
+.the-name {
+  margin: 30px;
+}
+.odd-divs {
+  background: lightgrey;
+}
+.even-divs {
+  background: darkgrey;
+}
